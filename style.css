@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap'); /*импортировать шрифт с сайта*/
+
+body {
+    background-color: #f1f1f1;  /*цвет сайта*/
+    color:#0f141e; 
+
+    font-size: 16px;             /*увеличить уменшить
+                                   сайт*/ 
+    font-weight: normal;         /*жирность шрифта*/
+    font-family: 'Lora', serif;   /*разные шрифты*/   
+}
+
+a {
+   color: black;
+   text-decoration: none; 
+}
+
+a:hover { /*hover это элемент который можно подчеркивать ссылку или разные стили*/
+
+    text-decoration: underline;
+}
+a:active {
+    color:cornflowerblue /*актив это элемент который если удерживаешь ссылку он меняет цвет*/
+    
+}
+/*a:visited {
+    color: grey; /*виситед это если посещять сайт то цвет останется на который ты назначил */
+/*}*/
+
+.avatar {
+    width: 200px; /*ширина*/
+    border-radius: 28px; /*скругление фото бурушын круг жасау или обратно тортбурыш кылу*/
+                         /* class- html деги блокты озн жеке css тан стильдеу . точкамен колданылады
+                            id-тоже class сиакты но оны озн жеке колданган дурыс # решоткамен колданады
+                            div- блочный элемент озине керек кодты парагравты жеке стильдеу */
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0 );/*тень*/
+}
+
+.info {
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .info {
+        text-align: center;
+        display: block;
+    }
+
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+.info p {
+  color: gray; 
+  margin: 0; 
+  font-style: italic;  /*размер текста, сделать текст понаклонной,подчеркивать текст, тексттын ара кашыктыгын озгету,текстты кшкентай немесе улкен арптерге озгерту,*/
+  font-weight:bold ;
+  text-decoration:none ;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing:normal ;
+}
+/*box-model*/
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+
+}
+
+/*.social {
+background: darkolivegreen;
+padding-top: 15px;   /* padding- внутренный отступ ишинен орын калдыру немесе улкейту*/
+/*padding-right: 20px;
+padding-bottom: 25px;
+padding-left: 30px;/*
+border: 5px solid darkgrey;   /*border- граница можно изменить цвет размер вид */
+/*margin: 5px ;   /* margin-внешний отступ сыртынан улкеиту орын калдыру*/
+/*border-bottom-style:ridge ;
+border-top-style: ridge;
+border-right-style: ridge;
+border-left-style: ridge;
+}*/
+
+.bg-yellow {
+    background-color: honeydew;
+
+}
+
+/*.bg-green {
+background: honeydew;
+}*/
+
+.bg-red{
+    background-color: honeydew;
+
+}
+
+.bg-chlen{
+    background-color: honeydew;
+}
+
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.card h2 {
+margin-bottom: 10px;
+
+}
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+}
+.table {
+ width: 100%;   
+}
+
+.table td {
+  padding-bottom: 10px;  
+
+}
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: #86898f;
+}
+.contact h2 {
+    text-align: center;
+
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+    background:transparent;
+}
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+.row > .form-group {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.row > .form-group:last-child {
+    margin-right: 0;
+}
+
+.btn {
+    background-color: gray ;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+ 
+
+
+
+
+/** {
+    padding: 0; убрать обнулить все паддинги и мэрджины
+    margin: 0;
+}*/
+
+
